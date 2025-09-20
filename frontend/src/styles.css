@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(255, 240, 220);
+  color: rgb(200, 200, 200);
+  margin: 0;
+  font-family: 'Optima', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+/*
+COLOR PALETTE USED
+Beige = rgb(255, 240, 220)
+Orange = rgb(240, 185, 120)
+Brown = rgb(85, 60, 20)
+Black = rgb(20, 15, 15)
+White = rgb(255, 255, 255)
+*/

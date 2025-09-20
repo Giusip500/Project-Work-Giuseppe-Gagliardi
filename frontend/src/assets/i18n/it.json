@@ -1,0 +1,248 @@
+{
+  "NAV": {
+    "MY_PROFILE": "Il mio profilo",
+    "MY_RESERVATIONS": "Le mie prenotazioni",
+    "MY_CUSTOM_MENUS": "I miei Menu personalizzati"
+  },
+  "HOME": {
+    "FIND_WHAT_YOU_NEED": "Trova ciò di cui hai bisogno",
+    "DESCRIPTION": "Lumora offre ambienti confortevoli e ospitali. Un soggiorno a 4 stelle che lascerà il segno nella memoria del tuo soggiorno nella città del Santo.",
+    "COMFORT": "Comfort, design, ospitalità sono una garanzia per il tuo soggiorno nel centro di Padova.",
+    "SERVICES": "Puoi scegliere tra una vasta gamma di servizi a tua disposizione.",
+    "EVENTS": "La struttura offre anche la possibilità di organizzare eventi e meeting aziendali.",
+    "ROOMS": "Camere",
+    "RESTAURANT": "Ristorante",
+    "MEETING": "Meeting"
+  },
+  "FOOTER": {
+    "PHONE": "Telefono",
+    "FOLLOW_US": "Seguici"
+  },
+  "PROFILE": {
+    "TITLE": "Profilo utente",
+    "EDIT": "Modifica",
+    "USERNAME": "Nome utente",
+    "EMAIL": "Email",
+    "USERNAME_TAKEN": "Nome utente già in uso.",
+    "CHANGE_PASSWORD": "Cambia password",
+    "OLD_PASSWORD": "Vecchia password",
+    "NEW_PASSWORD": "Nuova password",
+    "CONFIRM_PASSWORD": "Conferma nuova password",
+    "SAVE": "Salva",
+    "DELETE": "Elimina account",
+    "LOGOUT": "Esci",
+    "CONFIRM_DELETE": {
+      "TITLE": "Sei sicuro?",
+      "TEXT": "Questa azione eliminerà definitivamente il tuo account.",
+      "CONFIRM_BUTTON_TEXT": "Sì, elimina",
+      "CONFIRM_BUTTON_CANCEL": "Annulla",
+      "RESULT_TITLE": "Eliminato",
+      "RESULT_HTML": "Il tuo account è stato eliminato"
+    }
+  },
+  "RESERVATIONS": {
+    "TITLE": "Le mie prenotazioni",
+    "NO_RESERVATIONS": "Nessuna prenotazione trovata.",
+    "CHECKIN": "Check-in",
+    "CHECKOUT": "Check-out",
+    "STATUS": "Stato",
+    "DELETE": "Elimina",
+    "CONFIRM_DELETE": {
+      "TITLE": "Sei sicuro?",
+      "TEXT": "Questa azione eliminerà definitivamente la prenotazione selezionata.",
+      "CONFIRM_BUTTON_TEXT": "Sì, elimina",
+      "CONFIRM_BUTTON_CANCEL": "Annulla",
+      "RESULT_TITLE": "Eliminata",
+      "RESULT_HTML": "La prenotazione è stata eliminata"
+    }
+  },
+  "CUSTOM_MENUS": {
+    "TITLE": "I tuoi menu personalizzati",
+    "NO_MENUS": "Nessun menu personalizzato trovato.",
+    "DATE": "Data",
+    "DISHES": "Piatti"
+  },
+  "RESTAURANT": {
+    "WELCOME": "Benvenuto a Lumora",
+    "DISCOVER": "Scopri la nostra cucina",
+    "DESCRIPTION": "Dai salumi di montagna ai primi piatti freschi, passando per la Fiorentina e gli ottimi vini. Ogni piatto racconta una storia di sapori autentici.",
+    "SHOW_MENU": "Mostra il menù",
+    "HIDE_MENU": "Nascondi il menù",
+    "CUSTOM_MENU": "Menù Personalizzato",
+    "HIDE_CUSTOM_MENU": "Nascondi Menù Personalizzato",
+    "SELECT_INTOLERANCES": "Seleziona le tue intolleranze",
+    "DATE": "Data",
+    "MEAL": "Pasto",
+    "SELECT_MEAL": "Seleziona un pasto",
+    "GENERATE_MENU": "Genera Menù",
+    "GENERATED_MENU": "Menù Generato",
+    "CONFIRM_MENU": "Conferma Menù",
+    "INTOLERANCES": {
+      "LACTOSE": "Lattosio",
+      "GLUTEN": "Glutine",
+      "FRUCTOSE": "Fruttosio",
+      "HISTAMINE": "Istamina",
+      "SORBITOL": "Sorbitolo",
+      "NICKEL": "Nichel",
+      "EGGS": "Uova",
+      "SOY": "Soia",
+      "YEAST": "Lievito",
+      "SULPHITES": "Solfiti"
+    },
+    "MEALS": {
+      "LUNCH": "Pranzo",
+      "DINNER": "Cena"
+    }
+  },
+  "MEETING": {
+    "TITLE": "Il tuo spazio ideale per ogni occasione di business",
+    "DESCRIPTION": "Le nostre sale riunioni sono dotate di tecnologia all'avanguardia e progettate per garantire comfort e produttività. Che tu stia organizzando una conferenza, una sessione di formazione o una trattativa, offriamo un ambiente professionale ed elegante.",
+    "STANDARD": "Dotazioni Standard",
+    "ON_REQUEST": "Su Richiesta",
+    "ITEM_LIST_1": "Connessione Wi-Fi/via cavo ad alta velocità",
+    "ITEM_LIST_2": "Proiettore con porte HDMI",
+    "ITEM_LIST_3": "Schermo grande",
+    "ITEM_LIST_4": "Lavagna a fogli mobili",
+    "ITEM_LIST_5": "Microfoni (fissi, senza fili, con cuffie)",
+    "ITEM_LIST_6": "Computer portatili e software",
+    "ITEM_LIST_7": "Stampanti e configurazione di rete",
+    "ITEM_LIST_8": "Televoto e monitor LCD",
+    "ITEM_LIST_9": "Servizi floreali e fotografici",
+    "ITEM_LIST_10": "Hostess e supporto tecnico"
+  },
+  "ROOMS": {
+    "WELCOME_TITLE": "Benvenuto a Lumora",
+    "INTRO_TEXT": "Da Lumora non offriamo solo camere — creiamo esperienze.",
+    "QUALITY": "QUALITÀ in ogni dettaglio architettonico,",
+    "COMFORT": "COMFORT attraverso servizi raffinati e premurosi,",
+    "WELL_BEING": "BENESSERE per farti sentire davvero a casa,",
+    "CUSTOMER_SATISFACTION": "SODDISFAZIONE DEL CLIENTE al centro di tutto ciò che facciamo.",
+    "CTA": "Il tuo soggiorno con noi non è solo una visita — è un ricordo in divenire. Scopri la differenza. Prova Lumora, non te ne pentirai.",
+    "OUR_SERVICES_TITLE": "I nostri servizi in camera",
+    "OUR_SERVICES_INTRO": "Da Lumora ogni dettaglio è pensato per migliorare il tuo soggiorno. Scopri i servizi e le comodità esclusive disponibili nelle nostre camere:",
+    "SHOW_SERVICES": "Mostra servizi",
+    "HIDE_SERVICES": "Nascondi servizi",
+    "ITEM_LIST_1": "Aria condizionata",
+    "ITEM_LIST_2": "Asciugacapelli",
+    "ITEM_LIST_3": "Bollitore con tè e caffè su richiesta",
+    "ITEM_LIST_4": "Camere comunicanti",
+    "ITEM_LIST_5": "Camere con balcone",
+    "ITEM_LIST_6": "Camere insonorizzate",
+    "ITEM_LIST_7": "Camere accessibili agli ospiti con disabilità",
+    "ITEM_LIST_8": "Camere con vasca da bagno",
+    "ITEM_LIST_9": "Camere con parquet",
+    "ITEM_LIST_10": "Camere con scrivania",
+    "ITEM_LIST_11": "Prese USB vicino ai comodini",
+    "ITEM_LIST_12": "Cassaforte",
+    "ITEM_LIST_13": "Culle e letti pieghevoli",
+    "ITEM_LIST_14": "Ferro e asse da stiro su richiesta",
+    "ITEM_LIST_15": "Gratuito Internet Wi-Fi",
+    "ITEM_LIST_16": "Minibar",
+    "ITEM_LIST_17": "Servizio di tè e caffè gratuito in camera",
+    "ITEM_LIST_18": "Servizio in camera",
+    "ITEM_LIST_19": "TV satellitare con canali Sky gratuiti",
+    "ITEM_LIST_20": "TV satellitare in ogni camera",
+    "SINGLE": "Camera Singola",
+    "DOUBLE": "Camera Doppia",
+    "TRIPLE": "Camera Tripla",
+    "FAMILY": "Camera Familiare",
+    "SUITE": "Suite",
+    "PET": "Camera Pet Friendly"
+  },
+  "ROOM_DETAIL": {
+    "PRICE_PREFIX": "A partire da",
+    "PER_NIGHT": "a notte",
+    "SHOW_SERVICES": "Mostra i servizi inclusi",
+    "HIDE_SERVICES": "Nascondi i servizi inclusi",
+    "SERVICES_INCLUDED": "Servizi inclusi",
+    "BOOK": "Prenota ora",
+    "TOTAL": "Totale",
+    "ROOMS": {
+      "SINGLE": {
+        "TITLE": "Camera Singola",
+        "DESCRIPTION": "Perfetta per i viaggiatori singoli, la Camera Singola offre un ambiente accogliente e tranquillo con tutti i comfort essenziali.",
+        "AMENITIES": [
+          "Aria condizionata",
+          "Wi-Fi gratuito",
+          "Minibar",
+          "Servizio tè e caffè direttamente in camera",
+          "Servizio in camera",
+          "TV satellitare con Sky gratuito",
+          "Asciugacapelli",
+          "Bollitore con tè e caffè su richiesta",
+          "Camere insonorizzate",
+          "Cassaforte",
+          "Ferro e asse da stiro su richiesta",
+          "Scrivania"
+        ]
+      },
+      "DOUBLE": {
+        "TITLE": "Camera Doppia",
+        "DESCRIPTION": "Ideale per coppie o amici, la Camera Doppia unisce spazio, comfort e stile moderno per un'esperienza rilassante.",
+        "AMENITIES": [
+          "Letto queen-size",
+          "Bagno privato con vasca",
+          "Wi-Fi gratuito e TV con supporto streaming",
+          "Guardaroba e specchio a figura intera",
+          "Set per tè e caffè",
+          "Servizio di pulizia giornaliero"
+        ]
+      },
+      "TRIPLE": {
+        "TITLE": "Camera Tripla",
+        "DESCRIPTION": "Ampia e funzionale, la Camera Tripla è perfetta per piccoli gruppi o famiglie, offrendo flessibilità e comfort.",
+        "AMENITIES": [
+          "Un letto matrimoniale e un letto singolo",
+          "Bagno moderno con prodotti di cortesia",
+          "Wi-Fi gratuito",
+          "Mini frigo e spazi di archiviazione",
+          "Aria condizionata e illuminazione smart",
+          "Finestre insonorizzate"
+        ]
+      },
+      "FAMILY": {
+        "TITLE": "Camera Familiare",
+        "DESCRIPTION": "Progettata per le famiglie, questa camera offre ampi spazi, funzionalità adatte ai bambini e tutto il necessario per un soggiorno piacevole insieme.",
+        "AMENITIES": [
+          "Due letti matrimoniali oppure uno matrimoniale + letti a castello",
+          "Bagno spazioso con vasca",
+          "Culle gratuite su richiesta",
+          "Internet Wi-Fi gratuito",
+          "Minibar",
+          "TV con SKY"
+        ]
+      },
+      "SUITE": {
+        "TITLE": "Suite",
+        "DESCRIPTION": "Elegante e lussuosa, la nostra Suite è ideale per occasioni speciali o soggiorni prolungati, con area soggiorno separata e comfort di alto livello.",
+        "AMENITIES": [
+          "Wi-Fi gratuito",
+          "Minibar",
+          "TV LCD 43\" con SKY",
+          "Set di cortesia completo",
+          "Macchina per tè e caffè",
+          "Area salotto",
+          "Balcone"
+        ]
+      },
+      "PET": {
+        "TITLE": "Camera Pet Friendly",
+        "DESCRIPTION": "Viaggi con un amico peloso? La nostra Camera Pet Friendly assicura un soggiorno accogliente sia per te che per il tuo animale.",
+        "AMENITIES": [
+          "Una ciotola per l'acqua e una per il cibo",
+          "Una cuccia per ogni cane e un lettino per ogni gatto",
+          "Sacchetti igienici",
+          "Una lettiera con sabbia in camera",
+          "Contatto con un veterinario locale disponibile 24 ore su 24"
+        ]
+      }
+    },
+    "CONFIRM_BOOKING_TITLE": "Sei sicuro di voler prenotare questa stanza?",
+    "CONFIRM_BOOKING": "Si, prenota ora!",
+    "CANCEL": "Cancella",
+    "ROOM_BOOKED": "Camera prenotata!",
+    "ERROR_WHILE_BOOKING": "Errore durante la prenotazione",
+    "NO_ROOM_AVAILABLE": "Nessuna camera disponibile",
+    "ERROR_DURING_AVAILABILITY_CHECK": "Errore durante la verifica della disponibilità"
+  }
+}

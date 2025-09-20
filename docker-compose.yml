@@ -1,0 +1,38 @@
+networks:
+  lumora-network:
+services:
+  db:
+    image: postgres:17
+    container_name: lumoradb
+    restart: always
+    environment:
+      POSTGRES_DB: lumoradb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - lumora-network
+  backend:
+    build: ./backend
+    container_name: backend
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    networks:
+      - lumora-network
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "4300:4300"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - lumora-network
+volumes:
+  pgdata:

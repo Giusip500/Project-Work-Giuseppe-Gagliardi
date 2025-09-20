@@ -1,0 +1,248 @@
+{
+  "NAV": {
+    "MY_PROFILE": "My Profile",
+    "MY_RESERVATIONS": "My Reservations",
+    "MY_CUSTOM_MENUS": "My Custom Menus"
+  },
+  "HOME": {
+    "FIND_WHAT_YOU_NEED": "Find what you need",
+    "DESCRIPTION": "Lumora offers comfortable and hospitable environments. A 4-star stay that will leave a mark in your memory in the city of the Saint.",
+    "COMFORT": "Comfort, design, hospitality represent a guarantee for your stay in the center of Padua.",
+    "SERVICES": "Your choice can fall on a wide range of services at your disposal.",
+    "EVENTS": "The structure also offers the possibility of organizing events and business meetings.",
+    "ROOMS": "Rooms",
+    "RESTAURANT": "Restaurant",
+    "MEETING": "Meeting"
+  },
+  "FOOTER": {
+    "PHONE": "Phone",
+    "FOLLOW_US": "Follow us"
+  },
+  "PROFILE": {
+    "TITLE": "User Profile",
+    "EDIT": "Edit",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "USERNAME_TAKEN": "Username already taken.",
+    "CHANGE_PASSWORD": "Change Password",
+    "OLD_PASSWORD": "Old Password",
+    "NEW_PASSWORD": "New Password",
+    "CONFIRM_PASSWORD": "Confirm New Password",
+    "SAVE": "Save",
+    "DELETE": "Delete Account",
+    "LOGOUT": "Logout",
+    "CONFIRM_DELETE": {
+      "TITLE": "Are you sure?",
+      "TEXT": "This action will permanently delete your account.",
+      "CONFIRM_BUTTON_TEXT": "Yes, delete",
+      "CONFIRM_BUTTON_CANCEL": "Cancel",
+      "RESULT_TITLE": "Deleted",
+      "RESULT_HTML": "Your account has been deleted"
+    }
+  },
+  "RESERVATIONS": {
+    "TITLE": "My Reservations",
+    "NO_RESERVATIONS": "No reservation found.",
+    "CHECKIN": "Check-In",
+    "CHECKOUT": "Check-Out",
+    "STATUS": "Status",
+    "DELETE": "Delete",
+    "CONFIRM_DELETE": {
+      "TITLE": "Are you sure?",
+      "TEXT": "This action will permanently delete the selected reservation.",
+      "CONFIRM_BUTTON_TEXT": "Yes, delete",
+      "CONFIRM_BUTTON_CANCEL": "Cancel",
+      "RESULT_TITLE": "Deleted",
+      "RESULT_HTML": "Your selected reservation has been deleted"
+    }
+  },
+  "CUSTOM_MENUS": {
+    "TITLE": "Your Custom Menus",
+    "NO_MENUS": "No custom menus found.",
+    "DATE": "Date",
+    "DISHES": "Dishes"
+  },
+  "RESTAURANT": {
+    "WELCOME": "Welcome to Lumora",
+    "DISCOVER": "Discover our cuisine",
+    "DESCRIPTION": "From mountain cured meats to fresh first courses, passing through Fiorentina and excellent wines. Each dish tells a story of authentic flavors.",
+    "SHOW_MENU": "Show Menu",
+    "HIDE_MENU": "Hide Menu",
+    "CUSTOM_MENU": "Custom Menu",
+    "HIDE_CUSTOM_MENU": "Hide Custom Menu",
+    "SELECT_INTOLERANCES": "Select your intolerances",
+    "DATE": "Date",
+    "MEAL": "Meal",
+    "SELECT_MEAL": "Select a meal",
+    "GENERATE_MENU": "Generate Menu",
+    "GENERATED_MENU": "Generated Menu",
+    "CONFIRM_MENU": "Confirm Menu",
+    "INTOLERANCES": {
+      "LACTOSE": "Lactose",
+      "GLUTEN": "Gluten",
+      "FRUCTOSE": "Fructose",
+      "HISTAMINE": "Histamine",
+      "SORBITOL": "Sorbitol",
+      "NICKEL": "Nickel",
+      "EGGS": "Eggs",
+      "SOY": "Soy",
+      "YEAST": "Yeast",
+      "SULPHITES": "Sulphites"
+    },
+    "MEALS": {
+      "LUNCH": "Lunch",
+      "DINNER": "Dinner"
+    }
+  },
+  "MEETING": {
+    "TITLE": "Your Ideal Space for Every Business Occasion",
+    "DESCRIPTION": "Our meeting rooms are equipped with cutting-edge technology and designed for comfort and productivity. Whether you're hosting a conference, training session, or business negotiation, we offer a professional and elegant setting to suit all your needs.",
+    "STANDARD": "Standard Equipment",
+    "ON_REQUEST": "On Request",
+    "ITEM_LIST_1": "High-speed Wi-Fi / cable connection",
+    "ITEM_LIST_2": "Projector with HDMI ports",
+    "ITEM_LIST_3": "Large display screen",
+    "ITEM_LIST_4": "Flip chart",
+    "ITEM_LIST_5": "Microphones (fixed, cordless, headset)",
+    "ITEM_LIST_6": "Laptops & software",
+    "ITEM_LIST_7": "Printers & network setup",
+    "ITEM_LIST_8": "Televoting & LCD monitors",
+    "ITEM_LIST_9": "Floral & photo services",
+    "ITEM_LIST_10": "Hostess & technical support"
+  },
+  "ROOMS": {
+    "WELCOME_TITLE": "Welcome to Lumora",
+    "INTRO_TEXT": "At Lumora, we don't just offer rooms — we craft experiences.",
+    "QUALITY": "QUALITY in every architectural detail,",
+    "COMFORT": "COMFORT through refined and thoughtful services,",
+    "WELL_BEING": "WELL-BEING to make you feel truly at home,",
+    "CUSTOMER_SATISFACTION": "CUSTOMER SATISFACTION at the heart of everything we do.",
+    "CTA": "Your stay with us isn't just a visit — it's a memory in the making. Discover the difference. Try Lumora, and you won't regret it.",
+    "OUR_SERVICES_TITLE": "Our Room Services",
+    "OUR_SERVICES_INTRO": "At Lumora, every detail is designed to enhance your stay. Discover the exclusive services and amenities available in our rooms:",
+    "SHOW_SERVICES": "Show services",
+    "HIDE_SERVICES": "Hide services",
+    "ITEM_LIST_1": "Air conditioning",
+    "ITEM_LIST_2": "Hairdryer",
+    "ITEM_LIST_3": "Kettle with tea and coffee on request",
+    "ITEM_LIST_4": "Connecting rooms",
+    "ITEM_LIST_5": "Rooms with balcony",
+    "ITEM_LIST_6": "Soundproof rooms",
+    "ITEM_LIST_7": "Accessible rooms for guests with disabilities",
+    "ITEM_LIST_8": "Rooms with bathtub",
+    "ITEM_LIST_9": "Rooms with parquet flooring",
+    "ITEM_LIST_10": "Rooms with desk",
+    "ITEM_LIST_11": "USB ports by the bedside tables",
+    "ITEM_LIST_12": "Safe deposit box",
+    "ITEM_LIST_13": "Cribs and foldable beds",
+    "ITEM_LIST_14": "Iron and ironing board on request",
+    "ITEM_LIST_15": "Free Wi-Fi internet",
+    "ITEM_LIST_16": "Minibar",
+    "ITEM_LIST_17": "Complimentary in-room tea and coffee service",
+    "ITEM_LIST_18": "Room service",
+    "ITEM_LIST_19": "Satellite TV with free Sky channels",
+    "ITEM_LIST_20": "Satellite TV in every room",
+    "SINGLE": "Single Room",
+    "DOUBLE": "Double Room",
+    "TRIPLE": "Triple Room",
+    "FAMILY": "Family Room",
+    "SUITE": "Suite",
+    "PET": "Pet Friendly Room"
+  },
+  "ROOM_DETAIL": {
+    "PRICE_PREFIX": "Starting from",
+    "PER_NIGHT": "per night",
+    "SHOW_SERVICES": "Show included services",
+    "HIDE_SERVICES": "Hide included services",
+    "SERVICES_INCLUDED": "Services included",
+    "BOOK": "Book now",
+    "TOTAL": "Total",
+    "ROOMS": {
+      "SINGLE": {
+        "TITLE": "Single Room",
+        "DESCRIPTION": "Perfect for solo travelers, the Single Room offers a cozy, quiet environment with all the essentials for a comfortable stay.",
+        "AMENITIES": [
+          "Air conditioning",
+          "Free Wi-Fi",
+          "Minibar",
+          "Free tea and coffee service directly in the room",
+          "Room service",
+          "Satellite TV with free Sky",
+          "Hairdryer",
+          "Kettle with tea and coffee on request",
+          "Soundproofed rooms",
+          "Safe",
+          "Iron and ironing board on request",
+          "Desk"
+        ]
+      },
+      "DOUBLE": {
+        "TITLE": "Double Room",
+        "DESCRIPTION": "Ideal for couples or friends, the Double Room combines space, comfort, and modern style for a relaxing experience.",
+        "AMENITIES": [
+          "Queen-size bed",
+          "En-suite bathroom with bathtub",
+          "Free Wi-Fi and streaming-ready TV",
+          "Wardrobe and full-length mirror",
+          "Coffee and tea making facilities",
+          "Daily cleaning service"
+        ]
+      },
+      "TRIPLE": {
+        "TITLE": "Triple Room",
+        "DESCRIPTION": "Spacious and functional, the Triple Room is perfect for small groups or families, offering flexibility and comfort.",
+        "AMENITIES": [
+          "One double bed and one single bed",
+          "Modern bathroom with amenities",
+          "Complimentary Wi-Fi",
+          "Mini fridge and storage space",
+          "Air conditioning and smart lighting",
+          "Soundproof windows"
+        ]
+      },
+      "FAMILY": {
+        "TITLE": "Family Room",
+        "DESCRIPTION": "Designed for families, this room offers generous space, child-friendly features, and everything needed for a pleasant stay together.",
+        "AMENITIES": [
+          "Two double beds or one double + bunk beds",
+          "Spacious bathroom with bathtub",
+          "Free cots on request",
+          "Free Wi-Fi Internet",
+          "Minibar",
+          "SKY TV"
+        ]
+      },
+      "SUITE": {
+        "TITLE": "Suite",
+        "DESCRIPTION": "Elegant and luxurious, our Suite is ideal for special occasions or longer stays, offering a separate living area and top-tier comfort.",
+        "AMENITIES": [
+          "Free Wi-Fi Internet",
+          "Minibar",
+          "SKY TV LCD 43\"",
+          "Complete courtesy set",
+          "Tea&coffee maker",
+          "Lounge area",
+          "Balcony"
+        ]
+      },
+      "PET": {
+        "TITLE": "Pet Friendly Room",
+        "DESCRIPTION": "Traveling with a furry friend? Our Pet Friendly Room ensures both you and your pet enjoy a welcoming, cozy stay.",
+        "AMENITIES": [
+          "A bowl for water and one for food",
+          "A kennel for each dog and a bed for each cat",
+          "Puppy bags",
+          "A litter box with sand in the room",
+          "A contact for a local veterinarian available 24 hours a day"
+        ]
+      }
+    },
+    "CONFIRM_BOOKING_TITLE": "Are you sure you want to book this room?",
+    "CONFIRM_BOOKING": "Yes, book room!",
+    "CANCEL": "Cancel",
+    "ROOM_BOOKED": "Room booked!",
+    "ERROR_WHILE_BOOKING": "Error while booking",
+    "NO_ROOM_AVAILABLE": "No room available",
+    "ERROR_DURING_AVAILABILITY_CHECK": "Error during availability check"
+  }
+}

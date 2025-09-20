@@ -1,0 +1,17 @@
+<div class="reservations-container">
+  <h2 class="reservations-title">{{ 'RESERVATIONS.TITLE' | translate }}</h2>
+
+  <div *ngIf="reservations.length === 0" class="no-reservations">{{ 'RESERVATIONS.NO_RESERVATIONS' | translate }}</div>
+
+  <div *ngFor="let reservation of reservations" class="reservation-card">
+    <div class="reservation-info">
+      <h3>{{ reservation.roomType }}</h3>
+      <p><strong>{{ 'RESERVATIONS.CHECKIN' | translate }}:</strong> {{ reservation.checkInDate }}</p>
+      <p><strong>{{ 'RESERVATIONS.CHECKOUT' | translate }}:</strong> {{ reservation.checkOutDate }}</p>
+      <p><strong>{{ 'RESERVATIONS.STATUS' | translate }}:</strong> {{ getTranslatedStatus(reservation.status) }}</p>
+    </div>
+    <div class="reservation-actions">
+      <button class="delete-button" (click)="confirmDelete(reservation.id)">{{ 'RESERVATIONS.DELETE' | translate }}</button>
+    </div>
+  </div>
+</div>

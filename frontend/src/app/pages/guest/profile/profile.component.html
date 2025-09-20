@@ -1,0 +1,44 @@
+<div class="profile-container">
+  <div class="profile-card">
+    <div class="avatar-wrapper" (click)="triggerFileInput()">
+      <img [src]="avatarPreview || 'assets/avatar.png'" alt="Avatar" class="profile-avatar"/>
+      <div class="overlay"><span>{{ 'PROFILE.EDIT' | translate }}</span></div>
+      <input type="file" accept="image/*" (change)="avatarChange($event)" hidden #fileInput/>
+    </div>
+
+    <h2 class="profile-title">{{ 'PROFILE.TITLE' | translate }}</h2>
+    <form class="profile-form">
+      <div class="field">
+        <label for="username">{{ 'PROFILE.USERNAME' | translate }}</label>
+        <input id="username" type="text" [(ngModel)]="username" name="username" (blur)="checkUsernameExists()">
+        <div *ngIf="usernameExists" style="color: red; font-size: 12px;">{{ 'PROFILE.USERNAME_TAKEN' | translate }}</div>
+      </div>
+      <div class="field">
+        <label for="email">{{ 'PROFILE.EMAIL' | translate }}</label>
+        <input id="email" type="email" [(ngModel)]="email" name="email" disabled style="color: gray;">
+      </div>
+
+      <div class="password-toggle">
+        <button pButton type="button" icon="pi pi-key" [label]="'PROFILE.CHANGE_PASSWORD' | translate" class="p-button-rounded p-button-info p-button-outlined custom-button" (click)="togglePasswordSection()"></button>
+      </div>
+      <div *ngIf="showPasswordSection" class="password-fields">
+        <div class="field">
+          <label for="oldPassword">{{ 'PROFILE.OLD_PASSWORD' | translate }}</label>
+          <input id="oldPassword" type="password" [(ngModel)]="oldPassword" name="oldPassword" [placeholder]="'PROFILE.OLD_PASSWORD' | translate"/>
+        </div>
+        <div class="field">
+          <label for="newPassword">{{ 'PROFILE.NEW_PASSWORD' | translate }}</label>
+          <input id="newPassword" type="password" [(ngModel)]="newPassword" name="newPassword" [placeholder]="'PROFILE.NEW_PASSWORD' | translate"/>
+        </div>
+        <div class="field">
+          <label for="confirmPassword">{{ 'PROFILE.CONFIRM_PASSWORD' | translate }}</label>
+          <input id="confirmPassword" type="password" [(ngModel)]="confirmPassword" name="confirmPassword" [placeholder]="'PROFILE.CONFIRM_PASSWORD' | translate"/>
+        </div>
+      </div>
+      
+      <button pButton (click)="save()" class="profile-btn save p-button p-component" [disabled]="usernameExists">{{ 'PROFILE.SAVE' | translate }}</button>
+      <button pButton (click)="confirmDelete()" class="profile-btn delete p-button p-component">{{ 'PROFILE.DELETE' | translate }}</button>
+      <button pButton (click)="logout()" class="profile-btn logout p-button p-component">{{ 'PROFILE.LOGOUT' | translate }}</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,333 @@
+.restaurant-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+.carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 450px;
+  filter: brightness(0.6);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel-img.active {
+  opacity: 1;
+  z-index: 0;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 240, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 3px 6px rgba(20, 15, 15, 0.8);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.carousel-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background-color: rgba(85, 60, 20, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+}
+
+.restaurant-description {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+}
+
+.restaurant-description h2 {
+  font-size: 2.5rem;
+  color: rgb(85, 60, 20); 
+  margin-bottom: 1rem;
+}
+
+.restaurant-description p {
+  font-size: 1.3rem;
+  color: rgb(20, 15, 15);
+  line-height: 1.6;
+}
+
+.menu-toggle-wrapper {
+  margin: 2rem 0;
+}
+
+.menu-button {
+  background: linear-gradient(135deg, rgb(240, 185, 120), rgb(255, 200, 140));
+  color: rgb(20, 15, 15);
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 6px 12px rgba(85, 60, 20, 0.3);
+}
+
+.menu-button:hover {
+  background: linear-gradient(135deg, rgb(220, 150, 80), rgb(240, 185, 120));
+  transform: translateY(-2px);
+}
+
+.custom-menu-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.custom-button-container {
+  margin-bottom: 2rem;
+}
+
+.custom-menu-section {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(85, 60, 20, 0.1);
+  border: 1px solid rgba(240, 185, 120, 0.4);
+  text-align: center;
+}
+
+.custom-menu-section h3 {
+  font-size: 2rem;
+  color: rgb(85, 60, 20);
+  margin-bottom: 2rem;
+  border-bottom: 2px solid rgb(240, 185, 120);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.checkbox-group > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background: rgb(255, 250, 240);
+  border: 1px solid rgba(240, 185, 120, 0.4);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.checkbox-label {
+  color: rgb(20, 15, 15);
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+}
+
+.custom-form-fields {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.custom-form-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: rgb(85, 60, 20);
+  min-width: 200px;
+}
+
+.custom-form-fields label span {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.generated-menu {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgb(255, 240, 220);
+  border-radius: 12px;
+  border: 1px solid rgba(240, 185, 120, 0.4);
+}
+
+.generated-menu h4 {
+  font-size: 1.5rem;
+  color: rgb(85, 60, 20);
+  margin-bottom: 1rem;
+}
+
+.generated-dish-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+::ng-deep .p-inputtext,
+::ng-deep .p-select,
+::ng-deep .p-datepicker input {
+  background-color: rgb(255, 250, 240) !important;
+  color: rgb(20, 15, 15) !important;
+  border: 1px solid rgba(240, 185, 120, 0.6) !important;
+  border-radius: 8px !important;
+  padding: 0.7rem !important;
+}
+
+::ng-deep .p-inputtext:focus,
+::ng-deep .p-select:focus,
+::ng-deep .p-datepicker input:focus {
+  color: rgb(20, 15, 15) !important;
+  border-color: rgb(240, 185, 120) !important;
+  box-shadow: 0 0 0 2px rgba(240, 185, 120, 0.2) !important;
+}
+
+::ng-deep .p-select-label {
+  color: rgb(20, 15, 15) !important;
+}
+
+::ng-deep .p-select .p-placeholder {
+  color: rgba(20, 15, 15, 0.6) !important;
+}
+
+::ng-deep .p-select-overlay {
+  background: white !important;
+  border: 1px solid rgba(240, 185, 120, 0.6) !important;
+  border-radius: 8px !important;
+}
+
+::ng-deep .p-select-option {
+  color: rgb(20, 15, 15) !important;
+  background: white !important;
+  padding: 0.5rem 0.75rem !important;
+}
+
+::ng-deep .p-select-option:hover {
+  color: rgb(20, 15, 15) !important;
+  background: rgba(240, 185, 120, 0.1) !important;
+}
+
+::ng-deep .p-select-option.p-focus {
+  color: rgb(20, 15, 15) !important;
+  background: rgba(240, 185, 120, 0.2) !important;
+}
+
+::ng-deep .p-checkbox-box {
+  background-color: white !important;
+  border: 2px solid rgba(240, 185, 120, 0.6) !important;
+  border-radius: 4px !important;
+}
+
+::ng-deep .p-checkbox-box.p-highlight {
+  background-color: rgb(240, 185, 120) !important;
+  border-color: rgb(240, 185, 120) !important;
+}
+
+::ng-deep .p-datepicker {
+  background: white !important;
+  border: 1px solid rgba(240, 185, 120, 0.6) !important;
+  border-radius: 8px !important;
+}
+
+.menu-section {
+  padding: 2rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.menu-category {
+  margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+  font-size: 2rem;
+  color: rgb(85, 60, 20);
+  border-bottom: 2px solid rgb(240, 185, 120); 
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.dish-card {
+  background: rgb(255, 250, 240);
+  padding: 1.2rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(85, 60, 20, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(240, 185, 120, 0.4);
+  transition: transform 0.2s;
+}
+
+.dish-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(85, 60, 20, 0.2);
+}
+
+.dish-name {
+  font-weight: 600;
+  color: rgb(20, 15, 15); 
+}
+
+.dish-price {
+  font-weight: bold;
+  color: rgb(240, 185, 120); 
+}

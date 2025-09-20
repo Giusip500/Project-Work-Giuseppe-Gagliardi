@@ -1,0 +1,45 @@
+<div class="room-detail">
+  <app-navbar></app-navbar>
+  <main class="content">
+    <div class="room-detail-container">
+      <h2 class="room-title">{{ roomType }}</h2>
+      <p class="room-price">
+        {{ 'ROOM_DETAIL.PRICE_PREFIX' | translate }} <strong>{{ price | currency:'EUR' }}</strong>
+        {{ 'ROOM_DETAIL.PER_NIGHT' | translate }}
+      </p>
+      <img [src]="roomImage" alt="{{ roomType }}" class="room-image" />
+      <div class="description">
+        <p>{{ description }}</p>
+      </div>
+      <button class="toggle-btn" (click)="showAmenities = !showAmenities">
+        {{ showAmenities ? ('ROOM_DETAIL.HIDE_SERVICES' | translate) : ('ROOM_DETAIL.SHOW_SERVICES' | translate) }}
+      </button>
+      <div class="amenities" *ngIf="showAmenities && amenities">
+        <h4><i class="pi pi-star-fill icon-title"></i>{{ 'ROOM_DETAIL.SERVICES_INCLUDED' | translate }}</h4>
+        <ul>
+          <li *ngFor="let item of amenities">
+            <i class="pi pi-check-circle"></i> {{ item }}
+          </li>
+        </ul>
+      </div>
+      <div class="booking-container">
+        <div class="date-section">
+          <label for="checkInDate">Check-in</label>
+          <p-datePicker [(ngModel)]="checkInDate" [minDate]="today" inputId="checkInDate" dateFormat="yy-mm-dd" showIcon="true" (ngModelChange)="calculateTotalPrice()"></p-datePicker>
+        </div>
+        <div class="date-section">
+          <label for="checkOutDate">Check-out</label>
+          <p-datePicker [(ngModel)]="checkOutDate" [minDate]="minCheckOutDate" inputId="checkOutDate" dateFormat="yy-mm-dd" showIcon="true" (ngModelChange)="calculateTotalPrice()"></p-datePicker>
+        </div>
+        <div class="price-display" *ngIf="totalPrice !== null">
+          <p><strong>{{ 'ROOM_DETAIL.TOTAL' | translate }}:</strong> {{ totalPrice | currency: 'EUR' }}</p>
+        </div>
+        <button pButton label="{{ 'ROOM_DETAIL.BOOK' | translate }}" class="booking-btn" (click)="confirmBooking()"></button>
+        <div *ngIf="bookingResult" class="booking-result">
+          <p>{{ bookingResult }}</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <app-footer></app-footer>
+</div>

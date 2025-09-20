@@ -1,0 +1,63 @@
+<div class="admin-container">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+    </div>
+    <div class="user-info" (mouseenter)="showDropdown = true" (mouseleave)="showDropdown = false">
+      <button pButton class="profile-btn">
+        <span>{{ username }}</span>
+        <img [src]="avatarUrl" alt="Avatar" class="avatar" />
+      </button>
+      <div class="dropdown-menu" *ngIf="showDropdown">
+        <a (click)="goToProfile()">My Profile</a>
+      </div>
+    </div>
+  </nav>
+   <main>
+    <div class="section-grid">
+      <div class="rooms-booked-card" *ngFor="let booking of pendingBookings">
+        <h2>Booking #{{ booking.id }}</h2>
+        <p><strong>Room Type:</strong> {{ booking.roomType }}</p>
+        <p><strong>Room Number:</strong> {{ booking.room }}</p>
+        <p><strong>Check-In:</strong> {{ booking.checkInDate }}</p>
+        <p><strong>Check-Out:</strong> {{ booking.checkOutDate }}</p>
+        <p><strong>Total Price:</strong> ${{ booking.totalPrice }}</p>
+        <p><strong>Status:</strong> {{ booking.status }}</p>
+        <div class="button-row">
+          <button (click)="updateStatus(booking.id, 'Confirmed')" class="confirm-btn">Confirm</button>
+          <button (click)="updateStatus(booking.id, 'Rejected')" class="reject-btn">Reject</button>
+        </div>
+      </div>
+    </div>
+    <div class="section-grid">
+      <div class="rooms-booked-card" *ngFor="let booking of confirmedBookings">
+        <h2>Booking #{{ booking.id }}</h2>
+        <p><strong>Room Type:</strong> {{ booking.roomType }}</p>
+        <p><strong>Room Number:</strong> {{ booking.room }}</p>
+        <p><strong>Check-In:</strong> {{ booking.checkInDate }}</p>
+        <p><strong>Check-Out:</strong> {{ booking.checkOutDate }}</p>
+        <p><strong>Total Price:</strong> ${{ booking.totalPrice }}</p>
+        <p><strong>Status:</strong> {{ booking.status }}</p>
+        <div class="button-row">
+          <button (click)="updateStatus(booking.id, 'Pending')" class="pending-btn">Pending</button>
+          <button (click)="updateStatus(booking.id, 'Rejected')" class="reject-btn">Reject</button>
+        </div>
+      </div>
+    </div>
+    <div class="section-grid">
+      <div class="rooms-booked-card" *ngFor="let booking of rejectedBookings">
+        <h2>Booking #{{ booking.id }}</h2>
+        <p><strong>Room Type:</strong> {{ booking.roomType }}</p>
+        <p><strong>Room Number:</strong> {{ booking.room }}</p>
+        <p><strong>Check-In:</strong> {{ booking.checkInDate }}</p>
+        <p><strong>Check-Out:</strong> {{ booking.checkOutDate }}</p>
+        <p><strong>Total Price:</strong> ${{ booking.totalPrice }}</p>
+        <p><strong>Status:</strong> {{ booking.status }}</p>
+        <div class="button-row">
+          <button (click)="updateStatus(booking.id, 'Confirmed')" class="confirm-btn">Confirm</button>
+          <button (click)="updateStatus(booking.id, 'Pending')" class="pending-btn">Pending</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

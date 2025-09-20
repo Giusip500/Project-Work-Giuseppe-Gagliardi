@@ -1,0 +1,36 @@
+<div class="home-container">
+  <app-navbar></app-navbar>
+  <main class="content">
+    <div class="language-switcher-wrapper">
+      <app-language-switcher></app-language-switcher>
+    </div>
+    <div>
+      <h5>{{ "HOME.FIND_WHAT_YOU_NEED" | translate }}</h5>
+    </div>
+    <div>
+      <p class="content-description">
+        <strong>Lumora</strong> {{ "HOME.DESCRIPTION" | translate }}<br /><br />
+        <strong>{{ "HOME.COMFORT" | translate }}</strong
+        ><br /><br />
+        {{ "HOME.SERVICES" | translate }}<br /><br />
+        {{ "HOME.EVENTS" | translate }}
+      </p>
+    </div>
+    <div class="section-grid">
+      <div
+        class="home-card"
+        *ngFor="let section of sections"
+        (click)="navigateTo(section.route)"
+      >
+        <img
+          [src]="section.image"
+          alt="{{ section.titleKey }}"
+          class="card-image"
+        />
+        <h2>{{ section.titleKey | translate }}</h2>
+      </div>
+    </div>
+    <app-map-section />
+  </main>
+  <app-footer></app-footer>
+</div>

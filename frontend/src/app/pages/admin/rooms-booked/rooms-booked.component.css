@@ -1,0 +1,146 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(85, 60, 20);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-btn {
+  background-color: rgb(85, 60, 20) !important;
+  color: rgb(225, 225, 225) !important;
+  border: none !important;
+}
+
+.user-info {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-width: 175px;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  border: 0.5px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  padding: 10px 10px;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(20, 15, 15);
+}
+
+/* MAIN SECTION */
+.section-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+/* CARD */
+.rooms-booked-card {
+  width: 320px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1.5rem;
+  border-top: 8px solid rgb(240, 185, 120);
+}
+
+.rooms-booked-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.rooms-booked-card h2 {
+  color: rgb(85, 60, 20);
+  margin-bottom: 0.5rem;
+}
+
+.rooms-booked-card p {
+  margin: 0.25rem 0;
+  color: rgb(20, 15, 15);
+}
+
+/* BUTTONS */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.confirm-btn, .reject-btn, .pending-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.confirm-btn {
+  background-color: rgb(240, 185, 120);
+  color: rgb(20, 15, 15);
+}
+
+.confirm-btn:hover {
+  background-color: rgb(230, 165, 90);
+}
+
+.reject-btn {
+  background-color: rgb(85, 60, 20);
+  color: white;
+}
+
+.reject-btn:hover {
+  background-color: rgb(100, 70, 30);
+}
+
+.pending-btn {
+  background-color: rgb(200, 200, 200);
+  color: rgb(20, 15, 15);
+}
+
+.pending-btn:hover {
+  background-color: rgb(180, 180, 180);
+}

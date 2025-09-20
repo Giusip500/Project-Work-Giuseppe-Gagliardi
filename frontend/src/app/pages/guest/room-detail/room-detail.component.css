@@ -1,0 +1,151 @@
+.room-detail {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-detail-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  background-color: white; 
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: rgb(20, 15, 15);
+}
+
+.room-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(85, 60, 20);
+}
+
+.room-price {
+  font-size: 1.5rem;
+  color: rgb(240, 185, 120);
+  margin-bottom: 1.5rem;
+}
+
+.room-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgb(85, 60, 20);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.toggle-btn {
+  background-color: rgb(240, 185, 120);
+  color: rgb(20, 15, 15);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.025);
+}
+
+.amenities {
+  margin: 2rem auto;
+}
+
+.amenities h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: rgb(85, 60, 20);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.amenities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.amenities li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  color: rgb(20, 15, 15);
+}
+
+.amenities i {
+  color: rgb(25, 150, 90);
+  font-size: 1rem;
+  margin-right: 0.6rem;
+}
+
+.booking-container {
+  background-color: rgb(255, 240, 220);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(85, 60, 20, 0.2);
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: rgb(85, 60, 20);
+}
+
+.date-section {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-section label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: rgb(20, 15, 15);
+}
+
+.price-display {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: rgb(85, 60, 20);
+}
+
+.booking-btn {
+  margin-top: 1.5rem;
+  background-color: rgb(240, 185, 120) !important;
+  border: none !important;
+  color: rgb(20, 15, 15);
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.booking-btn:hover {
+  transform: scale(1.025);
+}
+
+.booking-result {
+  margin-top: 1rem;
+  font-style: italic;
+  color: rgb(20, 15, 15);
+}

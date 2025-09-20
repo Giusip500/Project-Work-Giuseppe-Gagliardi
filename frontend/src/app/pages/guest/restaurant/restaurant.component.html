@@ -1,0 +1,93 @@
+<div class="restaurant-container">
+  <app-navbar></app-navbar>
+  <main class="main">
+    <div class="carousel-wrapper">
+      <div class="carousel-container">
+        <img *ngFor="let image of images; let i = index" [src]="image" alt="Slide" class="carousel-img" [class.active]="i === currentImageIndex" />
+      </div>
+      <div class="carousel-overlay">
+        <h1 class="carousel-title">{{ 'RESTAURANT.WELCOME' | translate }}</h1>
+      </div>
+    </div>
+    <section class="restaurant-description">
+      <h2>{{ 'RESTAURANT.DISCOVER' | translate }}</h2>
+      <p>{{ 'RESTAURANT.DESCRIPTION' | translate }}</p>
+    </section>
+    <div class="menu-toggle-wrapper">
+      <button class="menu-button" (click)="toggleMenu()">
+        {{ showMenu ? ('RESTAURANT.HIDE_MENU' | translate) : ('RESTAURANT.SHOW_MENU' | translate) }}
+      </button>
+    </div>
+
+    <section *ngIf="showMenu" class="menu-section">
+      <div class="custom-menu-wrapper">
+        <div class="custom-button-container">
+          <button class="menu-button" (click)="toggleCustomMenu()">
+            {{ showCustomMenuSection ? ('RESTAURANT.HIDE_CUSTOM_MENU' | translate) : ('RESTAURANT.CUSTOM_MENU' | translate) }}
+          </button>
+        </div>
+        <div class="custom-menu-section" *ngIf="showCustomMenuSection">
+          <h3>{{ 'RESTAURANT.SELECT_INTOLERANCES' | translate }}</h3>
+          <div class="checkbox-group">
+            <ng-container *ngFor="let intolerance of intolerances">
+              <div style="display: flex; align-items: center;">
+                <p-checkbox
+                  name="intolerance"
+                  [value]="intolerance"
+                  [(ngModel)]="selectedIntolerances"
+                  inputId="{{intolerance}}"
+                  (onChange)="onIntoleranceChange($event)">
+                </p-checkbox>
+                <label for="{{intolerance}}" class="checkbox-label">{{ getIntoleranceTranslation(intolerance) | translate }}</label>
+              </div>
+            </ng-container>
+          </div>
+          <div class="custom-form-fields">
+            <label>
+              <span>{{ 'RESTAURANT.DATE' | translate }}:</span>
+              <p-datepicker [(ngModel)]="selectedDate" dateFormat="yy-mm-dd"></p-datepicker>
+            </label>
+            <label>
+              <span>{{ 'RESTAURANT.MEAL' | translate }}:</span>
+              <p-select
+                [options]="mealOptions"
+                [(ngModel)]="mealType"
+                [placeholder]="'RESTAURANT.SELECT_MEAL' | translate"
+                optionLabel="label"
+                optionValue="value">
+              </p-select>
+            </label>
+          </div>
+          <button class="menu-button" (click)="generateMenu()">{{ 'RESTAURANT.GENERATE_MENU' | translate }}</button>
+          <div *ngIf="generatedMenu.length > 0" class="generated-menu">
+            <h4>{{ 'RESTAURANT.GENERATED_MENU' | translate }}</h4>
+            <div class="generated-dish-column">
+              <div class="dish-card" *ngFor="let dish of generatedMenu">
+                <div class="dish-name">{{ dish.name }}</div>
+                <div class="dish-price">{{ dish.price | currency:'EUR' }}</div>
+              </div>
+            </div>
+            <button
+              class="menu-button"
+              [disabled]="generatedMenu.length === 0"
+              *ngIf="!menuConfirmed"
+              (click)="confirmMenu()">
+              {{ 'RESTAURANT.CONFIRM_MENU' | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div *ngFor="let type of menuTypes" class="menu-category">
+        <h3>{{ type }}</h3>
+        <div class="dish-grid">
+          <div class="dish-card" *ngFor="let dish of filteredMenu[type]">
+            <div class="dish-name">{{ dish.name }}</div>
+            <div class="dish-price">{{ dish.price | currency:'EUR' }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <app-footer></app-footer>
+</div>

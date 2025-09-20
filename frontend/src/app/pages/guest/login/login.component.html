@@ -1,0 +1,20 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="footer-logo">
+        <img src="assets/logo.png" alt="Logo" class="logo-img" />
+    </div>
+    <h2 class="login-title">Login</h2>
+    <form class="login-form">
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" [(ngModel)]="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" type="password" [(ngModel)]="password" name="password" required>
+      </div>
+      <button pButton (click)="login()" class="login-btn p-button p-component">Login</button>
+      <button pButton (click)="signIn()" class="signIn-btn p-button p-component">Sign In</button>
+    </form>
+  </div>
+</div>

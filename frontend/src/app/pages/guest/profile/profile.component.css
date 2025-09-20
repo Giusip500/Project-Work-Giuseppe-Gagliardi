@@ -1,0 +1,133 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.profile-card {
+  background: white;
+  color: rgb(50, 50, 50);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(240, 185, 120);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background: rgba(0, 0, 0, 0.6);
+  color: rgb(200, 200, 200);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  font-weight: 500;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.avatar-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.profile-title {
+  font-size: 2rem;
+  font-weight: 750;
+  margin-bottom: 1rem;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: rgb(250, 250, 250);
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 10px;
+  box-shadow: none !important;
+  color: rgb(50, 50, 50);
+}
+:placeholder-shown{
+  border: 1px solid rgb(200, 200, 200) !important;
+  box-shadow: none !important;
+}
+
+.custom-button {
+  background: white !important;
+  color: rgb(50, 50, 50) !important;
+  border-color: rgb(50, 50, 50) !important;
+  transition: transform 0.2s ease;
+}
+
+.password-fields {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.password-fields .field {
+  margin-bottom: 1rem;
+}
+
+.password-fields label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.profile-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  font-weight: 750;
+  background: rgb(240, 185, 120) !important;
+  border: none !important;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.025);
+}

@@ -1,0 +1,20 @@
+<div class="menus-container">
+  <h2 class="menus-title">{{ 'CUSTOM_MENUS.TITLE' | translate }}</h2>
+
+  <div *ngIf="menus.length === 0" class="no-menus">
+    {{ 'CUSTOM_MENUS.NO_MENUS' | translate }}
+  </div>
+
+  <div *ngFor="let menu of menus" class="menu-card">
+    <div class="menu-info">
+      <h3>{{ menu.type | titlecase }}</h3>
+      <p><strong>{{ 'CUSTOM_MENUS.DATE' | translate }}:</strong> {{ menu.date }}</p>
+      <p><strong>{{ 'CUSTOM_MENUS.DISHES' | translate }}:</strong></p>
+      <ul>
+        <li *ngFor="let dish of menu.dishes">
+          {{ dish.name }} ({{ dish.type }}, {{ dish.price | currency:'EUR' }})
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

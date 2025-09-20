@@ -1,0 +1,54 @@
+<div class="rooms-container">
+  <app-navbar></app-navbar>
+  <main class="content">
+    <div class="intro-sections">
+      <div class="content-description">
+        <h1>{{ 'ROOMS.WELCOME_TITLE' | translate }}</h1>
+        <p class="description-text">
+          {{ 'ROOMS.INTRO_TEXT' | translate }}<br>
+          {{ 'ROOMS.QUALITY' | translate }}<br>
+          {{ 'ROOMS.COMFORT' | translate }},<br>
+          {{ 'ROOMS.WELL_BEING' | translate }}<br>
+          {{ 'ROOMS.CUSTOMER_SATISFACTION' | translate }}
+        </p>
+        <p class="description-cta">{{ 'ROOMS.CTA' | translate }}</p>
+      </div>
+      <div class="services-section">
+        <h2>{{ 'ROOMS.OUR_SERVICES_TITLE' | translate }}</h2>
+        <p class="services-intro">{{ 'ROOMS.OUR_SERVICES_INTRO' | translate }}</p>
+        <button class="toggle-btn" (click)="showServices = !showServices">
+          {{ showServices ? ('ROOMS.SHOW_SERVICES' | translate) : ('ROOMS.HIDE_SERVICES' | translate) }}
+        </button>
+        <ul *ngIf="showServices" class="services-list">
+          <li>{{ 'ROOMS.ITEM_LIST_1' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_2' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_3' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_4' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_5' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_6' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_7' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_8' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_9' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_10' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_11' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_12' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_13' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_14' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_15' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_16' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_17' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_18' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_19' | translate }}</li>
+          <li>{{ 'ROOMS.ITEM_LIST_20' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="room-categories">
+      <div class="category-card" *ngFor="let room of roomCategories" (click)="openRoom(room.route)">
+          <img [src]="room.image" alt="{{ room.titleKey }}" />
+          <h3>{{ room.titleKey | translate }}</h3>
+      </div>
+    </div>
+  </main>
+  <app-footer></app-footer>
+</div>

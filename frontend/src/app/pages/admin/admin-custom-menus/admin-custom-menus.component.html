@@ -1,0 +1,63 @@
+<div class="admin-custom-menus">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" class="logo" />
+    </div>
+    <div class="user-info" (mouseenter)="showDropdown = true" (mouseleave)="showDropdown = false">
+      <button pButton class="profile-btn">
+        <span>{{ username }}</span>
+        <img [src]="avatarUrl" alt="Avatar" class="avatar" />
+      </button>
+      <div class="dropdown-menu" *ngIf="showDropdown">
+        <a (click)="goToProfile()">My Profile</a>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+    <div class="filter-card p-card">
+      <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-6">
+          <label for="date">Filter by Date</label>
+          <p-calendar [(ngModel)]="filterDate" dateFormat="yy-mm-dd" (onSelect)="loadMenus()" inputId="date" [showIcon]="true"></p-calendar>
+        </div>
+        <div class="p-col-12 p-md-6">
+          <label for="type">Filter by Meal Type</label>
+          <p-dropdown 
+            [options]="mealTypes" 
+            [(ngModel)]="filterType" 
+            (onChange)="loadMenus()" 
+            placeholder="Select Type"
+            inputId="type">
+          </p-dropdown>
+        </div>
+      </div>
+    </div>
+
+    <p-table [value]="customMenus" class="menu-table" *ngIf="customMenus.length > 0" responsiveLayout="scroll">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Date</th>
+          <th>Meal Type</th>
+          <th>User</th>
+          <th>Courses</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-menu>
+        <tr>
+          <td>{{ menu.date }}</td>
+          <td>{{ menu.type }}</td>
+          <td>{{ menu.user?.username }}</td>
+          <td>
+            <ul>
+              <li *ngFor="let dish of menu.dishes">
+                {{ dish.name }} (€{{ dish.price }})
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+
+    <p-message severity="warn" *ngIf="customMenus.length === 0" text="No menus found for selected filters."></p-message>
+  </main>
+</div>
